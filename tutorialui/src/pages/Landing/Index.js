@@ -265,7 +265,7 @@ export default function Landing() {
                         </div>
                       </div> */}
                       <div className="body_first_section_content_column_header_title"><span className="bright">Try out your live API now!</span></div>
-                      <div className="body_first_section_content_column_ping_button" onClick={iterateClickCounter}>Ping Your API</div>
+                      <div className="body_first_section_content_column_ping_button" onClick={()=>{iterateClickCounter();alert("Hello! I am an alert box!!");}}>Ping Your API</div>
                       <div className="body_first_section_content_column_api_ping_counter">Times API Pinged: &nbsp;<span className="bright">{`${clickCounter ? clickCounter.click_counter : ""}`}</span></div>
                     </div>
                     <div className="landing_overview_horizontal_divider"></div>
