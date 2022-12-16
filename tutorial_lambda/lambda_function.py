@@ -32,7 +32,7 @@ def lambda_handler(event, context):
                     Key=add_ddb_meta({"pkey": "dkf"}),
                     UpdateExpression = "ADD scoress :val",
                     ExpressionAttributeValues = add_ddb_meta({
-                        ":val": 1
+                        ":val": 2
                         }),
                     ReturnValues = "ALL_NEW"
                 )
